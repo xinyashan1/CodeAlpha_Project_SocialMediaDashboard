@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>🌸 Social Media Dashboard 🌸</h1>
+      <button id="login-btn" class="btn">Log In</button>
+    </header>
+    
+    <section id="connect-accounts" class="hidden">
+      <h2>Connect Your Accounts</h2>
+      <div class="account-buttons">
+        <button class="account-btn" onclick="connectAccount('Twitter')">Connect Twitter</button>
+        <button class="account-btn" onclick="connectAccount('Instagram')">Connect Instagram</button>
+        <button class="account-btn" onclick="connectAccount('Facebook')">Connect Facebook</button>
+      </div>
+    </section>
+    
+    <section id="feeds" class="hidden">
+      <h2>Your Feeds</h2>
+      <div id="feed-container" class="feed-container">
+        <!-- Social media feeds will dynamically appear here -->
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
